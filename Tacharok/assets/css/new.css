@@ -1,0 +1,182 @@
+body{
+    background:#FBFAFB;
+}
+.important-title{
+    font-size: 30px;
+    font-weight: 500;
+    color:#555555;
+}
+@media only screen and (max-width: 600px) {
+    .important-title{
+        font-size: 24px;
+        font-weight: 500;
+        color:#555555;
+    }
+  }
+.modal{
+    height:30%!important;
+    transition: all 1s!important;
+    display:flex;
+    justify-content: center;
+}
+#submit{
+    transition: all 0.7s;
+}
+.animated-btn span{
+    color: #666666;
+    letter-spacing: 4px;
+ }
+.animated-btn{
+ position:relative;
+ margin-top:50px;
+ /* top:100px; */
+ left: 50%;
+ transform: translate(-50%, -50%);
+ display:flex;
+ align-items:center;
+ justify-content: center;
+ width:400px;
+ height:100px;
+ text-align:center;
+ line-height: 60px;
+ color:#fff;
+ font-size:24px;
+ text-transform: uppercase;
+ text-decoration:none;
+ box-sizing: border-box;
+ background: linear-gradient(90deg, #88FFCA, #FBC2F2,#ABD42E,#88FFCA);
+ background-size:400%;
+ border-radius: 30px;
+ z-index:1;
+ animation: animate 5s linear infinite;
+}
+.animated-btn:hover
+{
+ cursor:pointer;
+ animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+0%
+{
+background-position: 0%;
+}
+100%
+{
+background-position: 400%;
+}
+}
+.animated-btn:before
+{
+content: '';
+/* position:relative;
+margin-top:50px; */
+position: absolute;
+top: -5px;
+left: -5px;
+right: -5px;
+bottom: -5px;
+z-index: -1;
+background: linear-gradient(90deg, #88FFCA, #FBC2F2,#ABD42E,#88FFCA);
+background-size: 400%;
+border-radius: 40px;
+/* opacity: 0; */
+transition: 0.5s;
+animation: animate 5s linear infinite;
+
+
+}
+.animated-btn:hover:before
+{
+
+    filter: blur(10px)!important;
+    opacity:1;
+    animation: animate 5s linear infinite;
+}
+.button-end{
+    /* position:absolute; */
+    /* top:50%;
+    left:50%; */
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* color:black; */
+    text-decoration: none;
+    width:400px;
+    height:100px;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    padding-left:102px;
+    line-height: 10px;
+}
+.button-end svg, .button-end svg rect{
+    /* position:absolute;
+    top:0;
+    left:0; */
+    width:100%;
+    height:100%;
+    fill:transparent;
+    stroke-width: 4;
+    transition: 2s;
+    stroke: #03a534;
+    stroke-dasharray: 100 400;
+    stroke-dashoffset: 600;
+}
+.button-end:hover svg rect{
+    cursor:pointer;
+    stroke: #037fa5;
+    stroke-dasharray: 400 100;
+    stroke-dashoffset: 0;
+}
+
+
+
+.wrapper.style1 .forum-inner{
+    padding: 4rem 4rem 1rem 4rem!important;
+}
+.forum-title{
+    margin-top:32px!important;
+    letter-spacing: 6px;
+}
+.forum-icons{
+    display:flex;
+    justify-content:center;
+}
+.forum-icons span.fa-thumbs-down{
+    margin:0 50px 0 50px!important;
+}
+.forum-icons span{
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius:50%;
+}
+.user{
+    float:right;
+    margin-right:100px;
+}
+.user h3{
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+    .animated-btn{
+        width:300px;
+        height:80px;
+        font-size: 22px;
+    }
+    .forum-icons span.fa-thumbs-down{
+        margin-right: 15px;
+    }
+    .user{
+        margin-right: 20px;
+    }
+}
+
+.download-btn{
+    margin: 50px 0 50px 0;
+}
+.fade-first,.fade-scroll{
+    display:none;
+}
